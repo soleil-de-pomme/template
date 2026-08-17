@@ -1,0 +1,18 @@
+services:
+  osuny:
+    image: hugomods/hugo:ci
+    working_dir: /src
+    volumes:
+      - .:/src
+    command: >
+      sh -c "
+        npm install &&
+        hugo &&
+        hugo server
+        --bind 0.0.0.0
+        --port 1313
+        --baseURL /
+      "
+    ports:
+      - "1313"
+    restart: unless-stopped
