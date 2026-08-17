@@ -1272,7 +1272,7 @@ __metadata:
 
 "osuny@file:./themes/osuny::locator=osuny-template%40workspace%3A.":
   version: 9.2.0
-  resolution: "osuny@file:./themes/osuny#./themes/osuny::hash=f92a0a&locator=osuny-template%40workspace%3A."
+  resolution: "osuny@file:./themes/osuny#./themes/osuny::hash=c207f5&locator=osuny-template%40workspace%3A."
   dependencies:
     autoprefixer: ^10.4.21
     cssnano: ^5
@@ -1286,7 +1286,7 @@ __metadata:
     shelljs: ^0
   bin:
     osuny-hugo-theme: ./bin/osuny.js
-  checksum: d3c59add5ba220634be481d3d7aed4d07006eed4d8c46aedd27677e6586984fd3f30eb3df972c984aa6613069be826cb59f6f16a038e44e6a37a296e2de6445f
+  checksum: df7cd4b2bc4455237218a5bdb4d7b3ae280bc5ef3036dab751d3803de4f8fb681cb6278e5663be80e1fe822f00f273f03674088fbb7eef187f4a1fa43b1e6e72
   languageName: node
   linkType: hard
 
