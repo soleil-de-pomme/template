@@ -1,13 +1,73 @@
-theme: osuny
+theme: 
+  - osuny
+  - osuny-plugin-single-page-application
+
 _merge: deep
+pagination:
+  pagerSize: 100
 params:
+  debug:
+    productionUrl: https://cmjnrvb.net
+  plausible: cmjnrvb.net
+  keycdn:
+    quality:
+      high_ratio: 70
+  logo:
+    header:
+      default: "/assets/images/logo-cmjnrvb.svg"
+      darkmode: "/assets/images/logo-cmykrgb.svg"
+  blocks:
+    ignored: "block-class-cover"
   summary:
     position: hero
   search:
-    active: true
-  logo:
-    header: ''
-    footer: ''
-  home:
-    head:
-      title: site
+    active: false
+  breadcrumb:
+    position: none
+  i18n:
+    positions:
+      - footer
+  categories:
+    single:
+      taxonomies:
+        display: true
+  projects:
+    index:
+      options:
+        categories: false
+        summary: false
+    single:
+      meta:
+        position: none
+    share_links:
+      enabled: false
+  image_sizes:
+    blocks:
+      image:
+        desktop: 1964
+      gallery:
+        grid:
+          mobile: 500
+          tablet: 978
+          desktop: 978
+        large:
+          desktop: 1964
+    sections:
+      projects:
+        hero_single:
+          mobile: 600
+          tablet: 1280
+          desktop: 1964
+        layouts:
+          grid:
+            mobile: 500
+            tablet: 1964
+            desktop: 1964
+
+languages:
+  en:
+    params:
+      logo:
+        header:
+          default: "/assets/images/logo-cmykrgb.svg"
+          darkmode: "/assets/images/logo-cmjnrvb.svg"

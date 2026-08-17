@@ -1,0 +1,16 @@
+archives:
+  header:
+    project: Project
+    sector: Sector
+    services: Services
+    type: Type
+    year: Year
+commons:
+  backtotop: Top
+  credit: Built with <a href="https://www.osuny.org/" title="Osuny - external link" target="_blank" rel="noreferrer">Osuny</a>
+footer:
+  credit: © 2024 cmjnrvb studio
+projects:
+  see_all: All projects
+  navigation:
+    title: Other Projects

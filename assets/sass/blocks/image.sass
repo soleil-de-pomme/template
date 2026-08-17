@@ -1,0 +1,16 @@
+.block-image
+    figure picture
+        margin-left: 0
+        margin-right: 0
+    @include in-page-without-sidebar
+        &.image-landscape
+            figure picture
+                margin-left: 0
+                margin-right: 0
+        &.image-portrait
+            figure
+                align-items: center
+                justify-content: center
+                &, > button, > [role="button"]
+                    width: auto
+                    margin-left: auto

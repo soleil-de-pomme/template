@@ -1,0 +1,81 @@
+html
+    scroll-behavior: smooth
+    &.is-changing
+        scroll-behavior: auto
+
+body
+    letter-spacing: -0.01em
+    transition: background-color 0.2s
+
+h1, .h1, h2, .h2, h3, .h3
+    letter-spacing: -0.04em
+
+h4, .h4
+    letter-spacing: -0.02em
+
+.btn, .button
+    line-height: 1
+    letter-spacing: -0.02em
+    &[target="_blank"]:not(.icon)
+        &:after
+            display: none
+    @include firefox
+        --btn-padding: #{pxToRem(4.5)} #{pxToRem(10)} #{space(1.4)}
+
+.button--alt
+    --btn-background: #{$color-dark-grey}
+    --btn-color: #{$color-text}
+    --btn-border: none
+    --btn-hover-border: var(--btn-border)
+
+.breadcrumb-nav
+    @extend .sr-only
+
+.block-gallery,
+.block-image,
+.block-siblings-navigation,
+.hero,
+.project
+    img
+        border-radius: var(--image-border-radius)
+        &.loaded
+            transition: opacity 0.2s
+            opacity: 1
+        &:not(.loaded)
+            opacity: 0
+
+a.backtotop,
+a.fixed-blur-btn
+    @include button
+    @include blur-btn
+    @include body-text
+    // background: rgba(0,0,0,0.1) !important
+    text-decoration: none !important
+    width: pxToRem(100)
+    padding-top: pxToRem(10)
+    padding-bottom: pxToRem(10)
+    transform: translateX(-50%)
+    transition: all $arrow-duration $arrow-ease-transition !important
+    z-index: 10
+    &:focus, &:hover
+        color: var(--color-text) !important
+    &:hover
+        transform: translateX(-50%) scale(0.95) !important
+    @include media-breakpoint-down(md)
+        bottom: space(19)
+        font-size: pxToRem(14)
+
+a.backtotop
+    display: none
+    opacity: 0
+    transform: translateX(-50%) translateY(100px)
+    // @include media-breakpoint-up(md)
+    .projects__page &
+        display: block
+    .is-scrolling-down &
+        opacity: 1
+        transform: translateX(-50%)
+
+
+#swup-announcer
+    @extend .sr-only
