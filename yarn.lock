@@ -1252,12 +1252,12 @@ __metadata:
 
 "osuny-plugin-single-page-application@file:./themes/osuny-plugin-single-page-application::locator=osuny-template%40workspace%3A.":
   version: 1.0.0
-  resolution: "osuny-plugin-single-page-application@file:./themes/osuny-plugin-single-page-application#./themes/osuny-plugin-single-page-application::hash=bb3224&locator=osuny-template%40workspace%3A."
+  resolution: "osuny-plugin-single-page-application@file:./themes/osuny-plugin-single-page-application#./themes/osuny-plugin-single-page-application::hash=9b661c&locator=osuny-template%40workspace%3A."
   dependencies:
     "@swup/a11y-plugin": ^5.0.0
     "@swup/body-class-plugin": ^3.3.0
     swup: ^4.8.2
-  checksum: 36605fecad3ac61f7a36581b01790f575dea08f6851cffae80dd72b936268850c5555948eff34ad5ffa1b9c6ece3b6c3951ee63a7fe00b11c74838bb46f24636
+  checksum: 1d8864d2f54b2cad4d82b6cb0f8aeb2ec66cbad131429ae378a60bf308096b97a832269d2c15c53488a66b72add274d972ba3ddaa1ce03f85513c60dd415554a
   languageName: node
   linkType: hard
 
