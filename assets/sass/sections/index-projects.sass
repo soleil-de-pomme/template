@@ -96,12 +96,11 @@
         .projects-archives-header
             display: flex
             gap: var(--grid-gutter)
-            > *:not(:nth-child(3))
+            .header-title,
+            .header-taxonomy
+                width: columns(5)
+            .header-year
                 width: columns(2)
-            > *:nth-child(3)
-                width: columns(4)
-            .header-taxonomy__services
-                width: columns(4)
 
         .projects-archives-list
             > li
@@ -116,9 +115,10 @@
         .project
             .project-content
                 gap: var(--grid-gutter)
-                > *:not(.project-taxonomy__services)
+                .project-title,
+                .project-taxonomy
+                    width: columns(5)
+                .project-year
                     width: columns(2)
-                .project-taxonomy__services
-                    width: columns(4)
             &:hover .media
                 opacity: 1
